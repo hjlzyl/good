@@ -1,0 +1,62 @@
+.btn-primary {
+    background-color: #4be664;
+    border-color: white;
+}
+
+.navbar-right {
+    float: right !important;
+    margin-right: 0;
+}
+
+.row .navbar-inverse {
+    background-color: #503b2f;
+    border-color: #080808;
+}
+
+.main,
+.main>.row,
+.main .left {
+    height: 100%;
+}
+
+.main {
+    padding-top: 51px;
+}
+
+html,
+body {
+    height: 100%;
+}
+.left ul li a{
+    color: #8b9dad;
+    
+}
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 15px 20px;
+    font-size: 17px;
+    border-bottom:1px solid black;
+    text-indent: 20px
+}
+.left ul li:nth-child(1) a{
+    position: relative;
+    display: block;
+    padding: 10px 30px;
+    font-size: 40px
+}
+.col-md-2{
+    padding-right: 0px;
+    padding-left: 0px; 
+}
+.form-control-feedback {
+    left: -10px;
+    line-height: 53px;
+}
+.left ul li:nth-child(1) a .form-control-feedback{
+    left: -20px;
+    line-height: 63px;
+}
+ #myButton{
+    margin:300px 300px
+} 
