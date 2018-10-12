@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>考试一</title>
+		<style>
+			td{
+				width: 150px;
+				height: 20px;
+			}
+			.table{
+				border: 1px solid black;
+				margin: 50px auto;
+			}
+			.active{
+				background: aqua;
+			}
+			.success{
+				background: lightgoldenrodyellow
+			}
+			p{
+				text-align: center;
+				font-weight: bold;
+				font-size: 16px;
+			}
+			.new{
+				background: yellow;
+			}
+		</style>
+	</head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<body>
+		<p>员工信息</p>
+		<table class="table" border="1" cellpadding="0" cellspacing="0">
+			<tr style="background: darkgray;">
+				<th></th>
+				<th>姓名</th>
+				<th>薪水</th>
+				<th>年龄</th>
+			</tr>
+			<tr class="active">
+				<td><input type="checkbox" name="1" id="" value="" /></td>
+				<td>张三</td>
+				<td>20000</td>
+				<td>23</td>
+			</tr>
+			<tr class="success">
+				<td><input type="checkbox" name="1" id="" value="" /></td>
+				<td>李四</td>
+				<td>30000</td>
+				<td>24</td>
+			</tr>
+			<tr class="active">
+				<td><input type="checkbox" name="1" id="" value="" /></td>
+				<td>王五</td>
+				<td>25000</td>
+				<td>25</td>
+			</tr>
+			<tr class="success">
+				<td><input type="checkbox" name="1" id="" value="" /></td>
+				<td>马六</td>
+				<td>40000</td>
+				<td>45</td>
+			</tr>
+		</table>
+		<script type="text/javascript">
+			$(function(){
+				 $('input').change(function(){
+				 	console.log($(this).prop('checked'));
+				 	console.log(this)
+				 	if($(this).prop('checked')){
+				 		$(this).parents('tr').addClass('new')
+				 	}else{
+				 		$(this).parents('tr').removeClass('new');
+				 	}
+				 })
+			})
+		</script>
+	</body>
+</html>
